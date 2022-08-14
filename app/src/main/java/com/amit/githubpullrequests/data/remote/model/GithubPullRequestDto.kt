@@ -3,6 +3,8 @@ package com.amit.githubpullrequests.data.remote.model
 import com.google.gson.annotations.SerializedName
 import java.util.*
 
+
+// class for fetching pull request response
 data class GithubPullRequestDto(
     @SerializedName("number")
     val prNumber: Int,

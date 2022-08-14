@@ -3,7 +3,7 @@ package com.amit.githubpullrequests.data.mappers
 import com.amit.githubpullrequests.data.remote.model.GithubPullRequestDto
 import com.amit.githubpullrequests.domain.githubPullRequests.GithubPullRequest
 
-
+// Mapper to convert Api Response(GithubPullRequestDto) for closed pull request to Ui layer (GithubPullRequest)
 fun GithubPullRequestDto.toGithubPullRequest(): GithubPullRequest {
     val title = this.title
     val createdDate = this.createdDate

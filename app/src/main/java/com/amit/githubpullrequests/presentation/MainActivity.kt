@@ -57,12 +57,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showData(listClosedRequest: List<GithubPullRequest>?) {
+    private fun showData(listClosedRequest: List<GithubPullRequest>) {
         val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
         recyclerView?.apply {
             recyclerView.removeAllViews()
             layoutManager = LinearLayoutManager(this@MainActivity)
-            adapter = PullRequestAdapter(listClosedRequest!!, Glide.with(this@MainActivity))
+            adapter = PullRequestAdapter(listClosedRequest, Glide.with(this@MainActivity))
         }
     }
 }
